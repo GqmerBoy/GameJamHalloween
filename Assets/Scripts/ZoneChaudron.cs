@@ -10,6 +10,7 @@ public class ZoneChaudron : MonoBehaviour
         if (other.gameObject.GetComponent<Rigidbody>() != null)
         {
             ScoreManager.Instance.AddPoint();
+            Destroy(other.gameObject);
         }
     }
 }
